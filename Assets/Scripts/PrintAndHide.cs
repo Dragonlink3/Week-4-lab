@@ -25,8 +25,8 @@ public class PrintAndHide : MonoBehaviour
         if (myObj.tag == "Red" && i == 100){
             myObj.SetActive(false);
         }
-        if (myObj.tag == "Blue" && i >= 150 && i <= 250) {
-            myObj.SetActive(false);
+        if (myObj.tag == "Blue" && i == Random.Range(150,251)) {
+            myObj.GetComponent<Renderer>().enabled=false; 
         }
     }
 }
